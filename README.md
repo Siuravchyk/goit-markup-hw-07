@@ -1,1 +1,1 @@
-# https://r-prykhodko.github.io/goit-markup-hw-07/
+# https://siuravchyk.github.io/goit-markup-hw-07/
