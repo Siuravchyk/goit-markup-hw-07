@@ -69,6 +69,7 @@ body {
 
 @media screen and (min-width: 428px) {
     .container {
+        width: 428px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -263,8 +264,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
     .effective-solutions {
         background: var(--clr-navy-blue);
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); 
         max-width: 1440px;
         background-repeat: no-repeat;
@@ -272,6 +272,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         background-size: cover;
         margin-left: auto;
         margin-right: auto;
+        height: 600px;
         
     }
 
@@ -367,7 +368,16 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 .about-us-list-li {
-   
+    
+}
+@media screen and (max-width: 767px) {
+    .about-us-list-li:not(:last-child) {
+    margin-bottom: 72px;
+}
+    .subscribe {
+        text-align: center;
+        width: 100%;
+}
 }
 
 /* Tablet */
@@ -412,6 +422,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
     
     .about-us-p {
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -431,6 +442,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
     
     .h-three-about-us {
+        text-align: left;
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -450,9 +462,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
 }
 
-li.about-us-list-li:last-child {
-    margin-bottom: 0;
-}
+
 
 
 /* 
@@ -826,10 +836,12 @@ li.about-us-list-li:last-child {
     }
 
     .customers-list {
-        
+        column-gap: 24px;
         justify-content: center;
       }
-
+    .contact-item-post {
+        margin-bottom: 12px;
+    }
    
 }
 
@@ -1017,6 +1029,7 @@ li.about-us-list-li:last-child {
         margin-left: 40px;
        
     }
+    
 
     .navigation {
         display: flex;
@@ -1401,8 +1414,8 @@ li.contacts-mobile:last-child {
 }
 
 .subscribe {
-    text-align: center;
-    width: 100%;
+    
+    
 }
 
 .subscribe-text {
@@ -1502,7 +1515,7 @@ li.contacts-mobile:last-child {
         gap: 72px 24px;
         flex-direction: unset;
         justify-content: left;
-        
+        align-items: baseline;
       }
 
       .logo-p {
@@ -1712,6 +1725,7 @@ li.contacts-mobile:last-child {
     .subscribe-telegram-icon {
         margin-left: 16px;
     }
+
     
 }
 
